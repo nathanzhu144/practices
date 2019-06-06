@@ -54,24 +54,24 @@ if __name__ == "__main__":
 
 
 
-# int helper(vector<int> &nums, int index, unordered_map<int, int>& mem){
+int helper(vector<int> &nums, int index, unordered_map<int, int>& mem){
         
-#     if(mem.count(index) != 0){
-#         return mem[index];
-#     }
+    if(mem.count(index) != 0){
+        return mem[index];
+    }
     
-#     if(index < 0){
-#         return 0;
-#     }
+    if(index < 0){
+        return 0;
+    }
     
-#     mem[index] = std::max(helper(nums, index - 1, mem),
-#                             helper(nums, index - 2, mem) + nums[index]);
+    mem[index] = std::max(helper(nums, index - 1, mem),
+                            helper(nums, index - 2, mem) + nums[index]);
     
-#     return mem[index];
-# }
+    return mem[index];
+}
 
-# int rob(vector<int>& nums) {
-#     unordered_map<int, int> mem;
+int rob(vector<int>& nums) {
+    unordered_map<int, int> mem;
     
-#     return helper(nums, nums.size() - 1, mem);
-# }
+    return helper(nums, nums.size() - 1, mem);
+}
