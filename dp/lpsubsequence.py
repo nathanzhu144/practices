@@ -1,5 +1,6 @@
 
 ## simple longest palindromic subsequence
+#  June 3th, 2019, 55th John Street, New York 8:20 pm
 #  Base cases:
 #     single char has lps of 1
 #     two chars have lps of 1 or 2  (1 when chars are dissimilar)
