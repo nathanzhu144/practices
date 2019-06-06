@@ -17,7 +17,7 @@
 #     it is possible that either A and B are in lps,
 #
 #     lps length = max(lps(A[some string]), lps([some string]B))
-#  
+# 
 
 def lps(arr, i, j):
     if i == j:
