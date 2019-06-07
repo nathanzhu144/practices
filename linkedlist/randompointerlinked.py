@@ -2,6 +2,8 @@
 #  How to clone a single LL with a next and a random pointer?
 #
 #  There is an easy soln with a hash table O(n) space and O(n) time
+#  Similar questions: See how to copy a graph
+#  
 
 """
 # Definition for a Node.
