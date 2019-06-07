@@ -6,3 +6,6 @@ insert_into_sorted_linked: insert_into_sorted_linked.o
 
 median_sorted_linked: median_sorted_linked.o
 	$(CXX) $(CXXFLAGS) median_sorted_linked.cpp -o median_sorted_linked.exe
+
+clean:
+	rm -rf *.exe *.o *.vscode
