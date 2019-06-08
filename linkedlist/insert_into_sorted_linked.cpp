@@ -44,6 +44,7 @@ Node* add_node(Node *n, int val_in){
 *  
 *   There are three major cases.
 *   1. insert at beginning of list
+*       - CAN BE AVOIDED WITH DUMMY POINTER
 *       - note this includes case where ll is empty (tricky),
 *         this code doesn't work if we handle case 3 first
 *       - in this case, we have to be careful to change head of 
