@@ -1,4 +1,4 @@
-/** 
+/*
  * Nathan Zhu, 9:18 am American Express Tower 
  * So, the robber this time finds a bunch of houses that are connected in a binary
  * search tree.  If the robber robs any houses that are connected, the police get called.
