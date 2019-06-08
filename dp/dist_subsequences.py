@@ -32,7 +32,7 @@ def helper(src, dest, index_src, index_dest, mem):
 
     #base case
     if index_src == -1 or index_dest == -1:
-        mem[key] = (index_dest == -1)        #mem[key] should be 1 iff index_dest is 0
+        mem[key] = 0 + (index_dest == -1)        #mem[key] should be 1 iff index_dest is 0, 0 + for casting purposes
 
     #last two chars match
     elif src[index_src] == dest[index_dest]:
