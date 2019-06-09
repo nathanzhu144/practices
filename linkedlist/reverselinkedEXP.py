@@ -6,7 +6,7 @@
 
 class Node:
     def __init__(self, val_in):
-        self.val = val_/in
+        self.val = val_in
         self.next = None
 
 # Reverse linked list function
@@ -22,11 +22,24 @@ def reverseListRecursive(head):
     
     return helper(head)
 
+def reverseListIterative(head):
+    newhead = None
+    curr = head
+    next = head
+
+    while curr is not None:
+        next = head.next
+        curr.next = newhead
+        newhead = curr
+        curr = next
+
+    return newhead
+
 
 ######################
 #  Helper functions ##
 ######################
-def printlist(node_i1n):
+def printlist(node_in):
     while node_in is not None:
         print(node_in.val)
         node_in = node_in.next
@@ -42,6 +55,6 @@ def makelist(list_in):
     return dummyhead.next
 
 if __name__ == "__main__":
-    reverselist(makelist([1, 2, 3, 4, 5]))
-    printlist(temp)
+    printlist(reverseListIterative(makelist([1, 2, 3, 4, 5])))
+    #printlist(reverseListRecursive(makelist([1, 2, 3, 4, 5])))
     

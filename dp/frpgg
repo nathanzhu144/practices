@@ -1,0 +1,32 @@
+class Solution(object):
+    def canCross(self, stones):
+        """
+        :type stones: List[int]
+        :rtype: bool
+        """
+        def binary_find_index(list, target):
+            low = 0
+            high = len(list)
+            while low <= high:
+                med = (low + high) / 2
+                
+                if list[med] == target:
+                    return med
+                
+                if list[med] < target:
+                    low = med + 1
+                    
+                else:
+                    high = med - 1
+                    
+            return -1
+        
+        def helper(stones, curr_spot, curr_spot_index):
+            if curr_spot_index == len(stones - 1):
+                return True
+            
+            if curr_spot_index > len(stones - 1):
+                return False
+            
+                  
+        
