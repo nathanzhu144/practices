@@ -42,6 +42,8 @@
 #  N(5) = F(1, n) + F(2, n) + F(3, n) + F(4, n) + F(5, n)
 #        = N(0) * N(n - 0 - 1) + N(1) * N(n - 1 - 1) + N(2) * N(n - 3) + N(3) * N(n - 4) + N(4) * N(n - 5)
 #        = ...
+#  
+
 def unique_binary_trees(n):
     def helper(n, mem):
         if n in mem:
@@ -58,3 +60,5 @@ def unique_binary_trees(n):
         return mem[n]
 
     return helper(n, {})
+
+print(unique_binary_trees(4))
