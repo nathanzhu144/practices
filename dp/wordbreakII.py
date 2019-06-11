@@ -13,6 +13,10 @@ def wordBreak(s, wordDict):
     """
     
     ## This is whole recursive function
+    #  sent = sentence we want to split
+    #  word_dict = dictionary we use
+    #  returned = list[list[str]] to store all possible permutations
+    #  curr_path = splits we have done so far
     def helper(sent, word_dict, returned, curr_path):
         if not sent:
             returned.append(curr_path)

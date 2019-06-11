@@ -48,7 +48,7 @@ def minCut(s):
     
     mem = {}  #maps index to num substrings
     def helper(string, starting_index, mem):
-        if starting_index in mem:
+        if starting_index in mem:i*
             return mem[starting_index]
         
         if len(string) == 1:

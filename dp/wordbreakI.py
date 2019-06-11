@@ -1,6 +1,6 @@
 
 #  Nathan Zhu American Express Building, 
-#
+#  
 #  
 
 def wordBreak(s, wordDict):
