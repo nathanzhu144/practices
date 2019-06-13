@@ -7,3 +7,6 @@ minimum genetic mutation 433
 two sum
 three sum
 four sum
+
+hard dp
+word_search_two
