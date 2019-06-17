@@ -33,14 +33,10 @@
 def max_no_adjacent(arr):
     def helper(arr, i, mem):
         key = i
-        if key in mem:
-            return mem[key]
-
-        if i < 0:
-            return 0
-
-        else:
-            mem[i] = max(helper(arr, i - 1, mem), helper(arr, i - 2, mem) + arr[i])
+        if key in mem: return mem[key]
+        
+        if i < 0: return 0
+        else: mem[i] = max(helper(arr, i - 1, mem), helper(arr, i - 2, mem) + arr[i])
 
         return mem[i]
 

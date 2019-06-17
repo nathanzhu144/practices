@@ -1,4 +1,5 @@
 class Solution(object):
+    #  Saturday June 15th, 2019, 11:29 pm Chicago time, Chicago
     #  * -- D -- * -- O -- * -- G -- *
     #  |         |         |         |
     #  B         B         B         B
