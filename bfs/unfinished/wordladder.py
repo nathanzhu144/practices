@@ -15,7 +15,7 @@ def ladderLength(beginWord, endWord, wordList):
     def helper(begin, end, dictionary):
         alphabet = list(map(chr, range(97, 123)))
         counter = 0
-        BFS_current = [begin]
+        BFS_current, BFS_next = [begin], list()
 
         visited = set()
         
