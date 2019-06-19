@@ -65,5 +65,5 @@ def inorder(root):
         #      2    2 has no right, next while loop pops 2 off, and we go see if 3 has a right
         # if curr.right is None, we will pop the next thing off the stack,
         curr = curr.right
-
+    return returned
     
