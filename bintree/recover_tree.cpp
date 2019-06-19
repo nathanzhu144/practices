@@ -8,6 +8,8 @@
 *   values.
  */
 #include <limits>
+#include <algorithm>
+#define INT_MIN -20000000
 
 struct TreeNode {
      int val;
