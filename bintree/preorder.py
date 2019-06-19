@@ -1,4 +1,13 @@
-
+# Nathan Zhu June 18th, 2019 
+# 55 John Street, New York NY, 9:10 pm
+# just a primer on preorder traversal
+#               
+#        
+def preorder_rec(root, returned):
+    if not root: return returned
+    returned.append(root)
+    preorder_rec(root.left)
+    preorder_rec(root.right)
 
 def preorder_rec(root):
     if not root: return
