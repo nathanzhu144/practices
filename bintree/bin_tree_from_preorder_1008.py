@@ -1,4 +1,6 @@
 #  Nathan Zhu June 23rd, 2019, American Express Building, 10:30 pm
+#   
+#  Leetcode medium
 # 
 #  Idea is simple.
 #  1. First item in preorder list is the root to be considered.
