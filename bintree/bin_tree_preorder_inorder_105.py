@@ -38,6 +38,7 @@ def buildTree(preorder, inorder):
         # note where we split the inorder array
         # we take the front element of the preorder (the root), and 
         # split it according to the index of that element in preorder (see picture)
+        # NOTE: YOU HAVE TO BUILD LEFT BEFORE RIGHT
         root.left = helper(preorder, inorder[:inorder.index(root.val)])
         root.right = helper(preorder, inorder[inorder.index(root.val) + 1:])
         
