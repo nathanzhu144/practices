@@ -1,5 +1,6 @@
 # Nathan Zhu, Amex Tower, 36th Floor executive suit 5:33 pm
 # Saturday June 22nd
+# Leetcode 23, sort k linked lists, hard
 #
 # The idea for this one is divide and conquer.  This is the easiest, but probably worst approach.
 # We first merge 2 linked lists in front of a queue, and then push them to the back of a queue.
