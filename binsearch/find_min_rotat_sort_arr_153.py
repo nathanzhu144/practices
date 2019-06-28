@@ -14,7 +14,8 @@
 #  However, you can use the same logic for comparing mid against left.  However, that approach is basically impossible to do bug-free under pressure.
 #  
 #  So, since mid = (left + right) // 2, it must be true that right != mid if left < right.  
-#  This is true because we are taking the floor of the sum of the (left + right).
+#  This is true because we are taking the floor of the sum of the (left + right).  
+#  
 #  Therefore, we never have to worry about a case where arr[right] == arr[mid], BUT if we compare
 #  against mid, there is a case where arr[left] == arr[mid].  
 #
@@ -28,7 +29,7 @@
 #
 #  The problem to this is subtle, and I'm not entirely sure what the mechanism of this is, as this passed 100+ test cases before
 #  failing, but on this test case,
-#
+#.
         # [3, 4, 5, 1, 2]
         #  L     M     R
         # [3, 4, 5, 1, 2]
