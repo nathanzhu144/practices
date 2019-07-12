@@ -66,4 +66,16 @@ def find_leftmost(arr, target):
         return -1
 
 
-def 
+# while lo < hi - 1 -> when you want to find the closest element to the target (largest smaller value / smallest larger value to the target).
+
+# For example: in nums = [1, 9, 13], you want to find the largest smaller or equal element to the target=10. And you wrote and run:
+
+# while lo < hi:
+#     m = (lo + hi) // 2
+#     if nums[m] < target:
+#         lo = m             # you can't discard the element at index m by lo = m + 1, because the element potentially can be the answer.
+#     elif target < nums[m]:
+#         hi = m
+#     else:
+#         return m
+# Whoaaaaa! Got an infinite loop when lo = hi - 1. And hence you need to use while lo < hi - 1 to help you break out of the loop when lo = hi - 1.

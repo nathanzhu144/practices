@@ -4,7 +4,7 @@ def middleNode(self, head):
     :rtype: ListNode
     """ 
     #NOTE: In case where there are 2 middle nodes,
-    #      to return left middle: slow, fast = head, head + 1
+    #      to return left middle: slow, fast = head, head.next
     #      to return right middle: slow, fast = head, head
     slow, fast = head, head
     

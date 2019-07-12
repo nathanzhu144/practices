@@ -22,6 +22,8 @@
 #     we are left finding the BIGGEST row where target > matrix[med][0].
 #  
 #     We do this with a very familiar upper-bound structure.  See leetcode 69, sqrt x for similar structure.
+#     Finding floor and ceil if a number is described here
+#     https://www.techiedelight.com/find-floor-ceil-number-sorted-array/
 #
 #  2. Finding the correct column is much easier, actually.  We just need to check whether the element exists in the
 #     correct row.  We do a regular binary search where right = med - 1 and left = me + 1.  We return true iff we have

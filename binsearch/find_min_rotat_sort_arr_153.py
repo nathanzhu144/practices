@@ -3,6 +3,9 @@
 # Jesus, binary search questions are literally harder than DP problems by so much - they're soooo annoying.  
 # Legitimately binary search is the hardest
 #
+#  NOTE: This is same problem as finding number of rotations in a circular sorted array
+#        https://www.techiedelight.com/find-number-rotations-circularly-sorted-array/
+#
 # Approaching this problem actually isn't that bad...
 # 
 # Ex. [7, 8, 9, 10, 15, 20, 2, 3]
