@@ -21,7 +21,7 @@
 #  (2 - 3) * 4 + 2  =>  -1 * 4 + 2
 #  2 - (3 * 4) + 2  =>  2 - 12 + 2
 #  2 - 3 * (4 + 2)  =>  2 - 3 * 6
-#d
+#
 #  The only "issue" is the for loop is harder to write, as we have to increment
 #  by two every time.  This makes it harder to think about and code in a timed setting.
 #
