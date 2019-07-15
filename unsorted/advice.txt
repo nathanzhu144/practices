@@ -1,0 +1,20 @@
+
+Have the main stuff memorized by heart. Yeah, you should be able to write these functions out of your mind, eyes closed!: BFS/DFS (recursive and iterative), Connected Components and simple Distance calculation of two nodes in a graph, Binary Tree / BST traversal and validation, Two pointer method for Array queries (contiguous sub array sum), Merging/Intersection of sorted intervals and arrays, Meeting Room allocation problems, Trie data structure, How to generate subsets, How to generate Permutations, Recursive Backtracking to solve a few problems ( like words in a dictionary from a grid), User of containers and their O-Complexity, Min Heap-Max Heap applications, String parsing tokenization ( split string into components based on a delimiter) and lastly Merge-Sort.
+You should have absolute mastery of the above. ABSOLUTE TOTAL MASTERY. Mastery would mean you can recite the code verbally. Yeah don't get into the fuzz that you will be able to solve the problem and work out a simple backtracking cause you know the "theory". Your interviews in top company depends on primarily one thing: CODE STUTTER. Dont stutter while writing code, no one gives brownie points for it WHATEVER they say in CCTI or the recruiters or anyone else. You thought too much over a simple if-else comparison, you are done.
+For each of the point 1 topics, solve most of the common "Related Questions".
+Focus on DP LAST. No one should ask DP and if any company does, Screw it. I have been asked DP zero times. Don't implement Quick Sort or try to memorize it. Just know Sorting using APIs, that's enough.
+200, 300, 400 questions dont matter if you cant do the above steps FLUENTLY. And if you can, rest of the questions will be just a series of Ah-a moments. You can just read through solutions to get familiarized with them to get that "aha I know what the solution is" edge. The more time you have between interviews and prep, the more your memory fades. But Basic heart-roted understood Point 1 topics will always prove Handy.
+
+Lastly:
+Do the whole Full Stack Developer thing or get a nice grounding in it if you dont have cloud application experience or even Phone application experience. If you dont have these nailed, you will never pass System Design regardless of how much you lick the System Design Primer on the web clean.
+
+
+Insert Interval
+Meeting Rooms
+Meeting Rooms II
+Teemo Attacking
+Add Bold Tag in String
+Range Module
+Employee Free Time
+Partition Labels
+Interval List Intersections
