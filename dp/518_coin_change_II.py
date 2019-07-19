@@ -1,16 +1,15 @@
 #  Nathan Zhu Monday July 1st, 7:25 pm.  
-#  Coin Change II, Leetcode 322 | Leetcode medium | I think easy
+#  Coin Change II, Leetcode 518 | Leetcode medium | I think easy
 #
-#  You are given coins of different denominations and a total amount of money
-#   amount. Write a function to compute the fewest number of coins that you need 
-#   to make up that amount. If that amount of money cannot be made up by any 
-#   combination of the coins, return -1.
+#  You are given coins of different denominations and a total amount of money. 
+#  Write a function to compute the number of combinations that make up that amount. 
+#  You may assume that you have infinite number of each kind of coin.
 #
 #  We can memoize, as we re-solve the subproblem: making "amount" with first "index" coins.
 #
 
 
-def change(self, amount, coins):
+def change(amount, coins):
     """
     :type amount: int
     :type coins: List[int]
