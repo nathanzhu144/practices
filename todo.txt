@@ -13,3 +13,21 @@ hard dp
 merging two sorted arrays O(N)
 
 https://leetcode.com/problems/shortest-path-visiting-all-nodes/discuss/?currentPage=1&orderBy=most_votes&query=
+https://leetcode.com/problems/time-based-key-value-store/
+https://leetcode.com/problems/find-peak-element/
+https://leetcode.com/problems/lru-cache/
+https://leetcode.com/problems/median-of-two-sorted-arrays/
+https://leetcode.com/problems/meeting-rooms-ii/
+https://leetcode.com/problems/reorder-log-files/
+https://leetcode.com/problems/non-overlapping-intervals/discuss/276056/Python-Greedy-Interval-Scheduling
+
+def eraseOverlapIntervals(intervals):
+	end, cnt = float('-inf'), 0
+	for i in sorted(intervals, key=lambda x: x[1]):
+		if i[0] >= end: 
+			end = i[1]
+		else: 
+			cnt += 1
+	return cnt
+
+Range sweep?

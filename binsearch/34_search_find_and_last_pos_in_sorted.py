@@ -2,6 +2,7 @@
 #  Leetcode 34 | medium | deadly if not good at binary search
 #  Knowing how to find lower_bound and upper_bound of a number is vital.
 
+# NOTE: our find_smallest or find_largest returns -1 
 
 def search_range(arr, target):
     # standard lower bound search
