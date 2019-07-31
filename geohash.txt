@@ -1,0 +1,27 @@
+https://www.youtube.com/watch?v=UaMzra18TD8
+https://en.wikipedia.org/wiki/Geohash
+
+What is geohashing?
+
+The earth can be split up into a bunch of rectangles, 8 wide and 4 tall. These rectangles are numbered
+1 - 9 and A - Z (or some letter).
+
+If we zoom in on any of the rectangles, we can see that each of these rectangles is 8 wide and 4 tall as
+well.  These rectangles are numbered in the same scheme.
+
+9 characters is 4.7 meters squared.
+
+Geohash defined by 4 corners that surround it.
+
+
+"I knew this before. I was studying how to design Yelp (ProximityServer) and Geo-hashing seemed like a good tool for that.
+Instead of using longitude and latitude, geo-hash will give you a string.
+ The longer the string, the more zoom-in we are. To display average temperatures 
+ for a region, we have to take all the geo-hashes that starts with a certain 
+ set of characters and average the out."
+
+ "Geohashes offer properties like arbitrary precision and the possibility 
+ of gradually removing characters from the end of the code to reduce its size
+  (and gradually lose precision). As a consequence of the gradual precision
+   degradation, nearby places will often (but not always) present similar
+    prefixes. The longer a shared prefix is, the closer the two places are."
