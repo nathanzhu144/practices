@@ -4,8 +4,9 @@
 # Runtime: NLogN, cause we do O(N) in each stach frame, and we break into N/2 subproblems.
 # I was scared of this problem for ages, thinking it was a dumb problem.
 # There's a really cool divide and conquer soln that is really interesting, though.
-# 
-
+#
+# https://leetcode.com/problems/the-skyline-problem/discuss/61246/Share-my-divide-and-conquer-java-solution-464-ms
+# https://faculty.kfupm.edu.sa/ics/darwish/stuff/ics353handouts/Ch4Ch5.pdf
 # arr has buildings in the form [start_x, height, end_x]
 
 
