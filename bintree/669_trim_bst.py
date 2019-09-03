@@ -23,3 +23,44 @@ def trimBST(root, L, R):
         return root
     
     return helper(root, L, R)
+
+
+# Nathan Zhu August 26th, 2019 10:05 pm, Stockton California at buffalo wild wings
+# Leetcode 669 | easy | not easy, should be medium I think
+# Category: BST
+# 
+# Done in real-time in a "Microsoft OA", 1 hour time for 2 questions
+# Rating was 6.06/10, beating 66% of all users.
+# 
+
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+def trimBST(self, root, L, R):
+    """
+    :type root: TreeNode
+    :type L: int
+    :type R: int
+    :rtype: TreeNode
+    """
+    def helper(root, L, R):
+        if not root: return None
+        
+        # This node is excluded from the tree
+        if root.val < L:
+            return helper(root.right, L, R)
+        if root.val > R:
+            return helper(root.left, L, R)
+        
+        # We keep this value, no guarantee we keep left or right, so it is possible
+        # to exclude this value.
+        root.left = helper(root.left, L, R)
+        root.right = helper(root.right, L, R)
+        return root
+    
+    return helper(root, L, R)
