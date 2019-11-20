@@ -1,12 +1,13 @@
-# Nathan Zhu September 13th, 2019 11:47 am, 3 days before career fair.
-# Leetcode 713 | medium | medium
+# Nathan Zhu in 2nd floor duderstadt overlooking southern road
+# Leetcode 713 | medium | not too bad, typical sliding window.
+# Category: Sliding window.
 
-def num_subarr_prod_less_k(arr, k):
+def numSubarrayProductLessThanK(arr, k):
     """
     :type nums: List[int]
     :type k: int
     :rtype: int
-    """
+    """    
     if not arr: return 0
 
     currprod = 1
@@ -21,11 +22,7 @@ def num_subarr_prod_less_k(arr, k):
             currprod /= arr[left]
             left += 1
         ret += right - left + 1
-        
-        right += 1
-        
-    return ret
-    #return ret if ret >= 0 else 0
 
-if __name__ == "__main__":
-    print(num_subarr_prod_less_k([1, 2, 3], 0))
+        right += 1
+
+    return ret

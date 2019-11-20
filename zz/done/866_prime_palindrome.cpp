@@ -48,3 +48,5 @@ int primePalindrome(int n){
 int main(){
     primePalindrome(7);
 }
+
+//1 11 22 33 

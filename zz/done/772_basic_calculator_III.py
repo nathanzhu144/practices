@@ -1,4 +1,6 @@
-
+# Nathan Zhu
+# Leetcode 772 | hard | hard boi
+# Category: Stack
 
 
 def calculate(s):

@@ -1,3 +1,7 @@
+# Nathan Zhu
+# Leetcode 1114 | easy | haven't threaded in a while
+
+
 from threading import Lock
 from threading import Barrier
 

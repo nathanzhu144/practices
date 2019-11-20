@@ -1,5 +1,6 @@
 # Nathan Zhu 
-# 
+# Leetcode 1160 | easy | EZ
+# Category: fizzbuzz
 # You are given an array of strings words and a string chars.
 #
 # A string is good if it can be formed by characters from chars

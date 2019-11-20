@@ -1,4 +1,5 @@
 # Nathan Zhu September 15th, 2019, 9:51 pm Johnny's house - it has been a long Sunday
+#                                           Tomorrow is career fair.
 # Leetcode 30 | hard | pretty hard
 # 
 
