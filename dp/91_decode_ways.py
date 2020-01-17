@@ -73,6 +73,28 @@ def num_decodings(string):
 #  Top down uses less memory, but runtime is worse I think
 #
 # 
+
+# Most recent version (after doin 400 more LC problems)
+def numDecodingsNew(s):
+    """
+    :type s: str
+    :rtype: int
+    """
+    table = dict()
+    def helper(s):
+        if s in table: return table[s]
+        if not s: return 1
+        if s[0] == '0': return 0
+        
+        if len(s) >= 2 and int(s[:2]) <= 26:
+            table[s] = helper(s[1:]) + helper(s[2:])
+        else:
+            table[s] = helper(s[1:])
+            
+        return table[s]
+    return helper(s)
+
+# Old top-down version
 def numDecodings(self, s):
     """
     :type s: str

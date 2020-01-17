@@ -15,6 +15,40 @@
 # Dividing with negative numerator can cause problems...
 # 
 
+# This is a simpler frac to decimal I wrote in a mock interview
+def fractionToDecimal1(numerator, denominator):
+    """
+    :type numerator: int
+    :type denominator: int
+    :rtype: str
+    """
+    if numerator == 0: return "0"
+    ret = []
+    if numerator ^ denominator < 0: ret.append("-")
+        
+    num, denom = abs(numerator), abs(denominator)
+    ret.append(str(num // denom))
+    
+    if num % denom == 0: return "".join(ret)
+    
+    num = abs(numerator) % denom
+    table = dict()
+    i = 0
+    decimal = []
+    while num > 0:
+        if num in table:
+            # recurring decimal
+            decimal.insert(table[num], "(")
+            decimal.append(")")
+            break
+        table[num] = i
+        i += 1
+        num *= 10
+        decimal.append(str(num // denom))
+        num = num % denom
+        
+    return "".join(ret + ["."] + decimal)
+
 def fractionToDecimal(numerator, denominator):
     """
     :type numerator: int

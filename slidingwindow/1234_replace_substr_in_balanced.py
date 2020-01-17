@@ -1,4 +1,6 @@
-#
+# Nathan Zhu December 29th, 2019 Done in napa valley car
+# Leetcode 1234 | medium | kinda hard
+# Category: sliding window
 import collections
 
 def balancedString(s):

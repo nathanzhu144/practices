@@ -8,10 +8,31 @@
 
 # Runtime is O(N), where N is the number of characters in all the words combined.
 
-def isAlienSorted(words, order):
+# Did this one in a mock interview, think is easier.
+def isAlienSorted1(words, order):
     """
     :type words: List[str]
     :type order: str
+    :rtype: bool
+    """
+    alpha = string.ascii_lowercase
+    table = dict()
+    for i in range(len(order)):
+        table[order[i]] = alpha[i]
+    
+    new_words = []
+    for word in words:
+        new_word = []
+        for i in range(len(word)):
+            new_word.append(str(table[word[i]]))
+        new_words.append("".join(new_word))
+        
+    return (all(new_words[i] <= new_words[i + 1] for i in range(len(new_words) - 1)))
+    
+def isAlienSorted(words, order):
+"""
+:type words: List[str]
+:type order: str
     :rtype: bool
     """
     table = dict()

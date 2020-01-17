@@ -47,5 +47,39 @@ def leadsToDestination(n, edges, source, destination):
         Q = nextQ
 
     return True
+
+# A soln I thought up several months later when I forgot I did this problem.
+def leadsToDestinationRecursive(n, edges, source, destination):
+    """
+    :type n: int
+    :type edges: List[List[int]]
+    :type source: int
+    :type destination: int
+    :rtype: bool
+    """
+    graph = collections.defaultdict(list)
+    for a, b in edges:
+        graph[a].append(b)
+        
+        
+    visited = set()
+    def helper(curr, dest):
+        # we found it!
+        if curr == dest and len(graph[dest]) == 0: 
+            return True
+        # we got stuck
+        if curr != dest and len(graph[curr]) == 0:
+            return False
+        
+        if curr in visited: return False
+        visited.add(curr)
+        
+        for neigh in graph[curr]:
+            if not helper(neigh, dest): 
+                visited.remove(curr)
+                return False
+            
+        visited.remove(curr)
+        return True
     
-                
+    return helper(source, destination)
