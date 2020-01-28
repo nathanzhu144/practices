@@ -14,6 +14,30 @@
 #  I love this problem
 
 
+# A slightly better and more consise version (Jan 20th, 2020 10:10 pm ET, Ann Arbor MI, Foundry Lofts)
+def subtreeWithAllDeepest(self, root):
+    """
+    :type root: TreeNode
+    :rtype: TreeNode
+    """
+    table = dict()
+    
+    def find_h(root):
+        if not root: return 0
+        if root in table: return table[root]
+        table[root] = 1 + max(find_h(root.left), find_h(root.right))
+        return table[root]
+        
+    def helper(root):
+        left, right = find_h(root.left), find_h(root.right)
+        
+        if left == right: return root
+        if left > right: return helper(root.left)
+        else: return helper(root.right)
+        
+    return helper(root)
+
+# Wrote this at John Street.
 def subtreeWithAllDeepest(root):
     """
     :type root: TreeNode
@@ -40,3 +64,5 @@ def subtreeWithAllDeepest(root):
     node_to_height = dict()
     find_height(root, node_to_height)
     return return_subtree_deepest_nodes(root, node_to_height)
+
+
