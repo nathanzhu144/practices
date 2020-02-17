@@ -1,4 +1,6 @@
-
+# Nathan zhu Feb 10th, 2020.  Did this question at my bloomberg interview, but not in-place
+# Leetcode 443 | easy | easy
+# Category: fizzbuzz lol
 
 def compress(chars):
     """

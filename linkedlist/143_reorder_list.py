@@ -1,4 +1,5 @@
 # Nathan Zhu 11:38 pm Amex Tower 36th floor, Sunday July 7th, 2019
+# Nathan Zhu Feb 10th, 2020.  Foundry Lofts.  Dang, forgot so much.  Had bloomberg interview today.  Passed it, as usual.
 # Leetcode 143 | medium | somewhat hard, combination of finding middle of a linked list
 #                        flipping a linked list from 1-n, and integrating two linked list
 # 

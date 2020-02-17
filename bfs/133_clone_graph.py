@@ -3,12 +3,6 @@
 #   We first do a BFS, and make a hash table that maps
 #      Node in original ->  Deep copy of node in original
 # 
-#   Then, we iterate through a second time
-#      table[original_node]     
-class Node(object):
-    def __init__(self, val, neighbors):
-        self.val = val
-#   
 #
 #   Original Graph
 #          A -----  B
@@ -33,8 +27,34 @@ class Node(object):
     def add_neighbor(self, node):
         self.neighbors.append(node)
 
+# Cleaner soln Jan 20th, 2020
+def cloneGraphClean(node):
+    """
+    :type node: Node
+    :rtype: Node
+    """
+    table = dict()
+    if not node: return None
+    def dfs(n):
+        if n in table: return
+        table[n] = Node(n.val, [])
+        for neigh in n.neighbors: dfs(neigh)
+            
+            
+    def dfs2(n):
+        if table[n].neighbors != []: return                
+        for neigh in n.neighbors:
+            table[n].neighbors.append(table[neigh])
+            
+        for neigh in n.neighbors:
+            dfs2(neigh)
+            
+    dfs(node)
+    dfs2(node)
+        
+    return table[node]
 
-
+# Old soln During Amex internship
 def cloneGraph(self, node):
     """
     :type node: Node
