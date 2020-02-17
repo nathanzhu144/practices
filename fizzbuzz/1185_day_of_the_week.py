@@ -1,4 +1,5 @@
-# Nathan Zhu 1:03 am Friday January 3rd, 2019
+# Nathan Zhu 1:03 am Friday January 3rd, 2020
+#                    Sun Feb 12th, 2020 6:00 pm At fishbowl with Zhongfu and Julie
 # Leetcode 1185 | easy | not so easy
 # Had a very similar problem for my first online assessment at optiver, counting the number of days
 # between two dates.  I don't like these problems; I did badly at the onsite when they asked me folloups
@@ -10,6 +11,7 @@
 # 3. What day of the week and date today is.
 #
 #
+# Below is a cleaner soln with more python libraries.
 
 
 def dayOfTheWeek(day, month, year):
@@ -49,5 +51,32 @@ def dayOfTheWeek(day, month, year):
     
     return dayNames[(days_to_date - days_to_today) % 7]
             
+import calendar
+# Sunday Feb 9th, 2020
+# 
+# ?
+
+# date + (diff % 7) = today.
+
+table = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+def dayOfTheWeekUsingCalender(day, month, year):
+    def days_since_1971(day, month, year):
+        ret = 0
+        for y in range(1971, year):
+            if calendar.isleap(y): ret += 366
+            else: ret += 365
+                
+        for m in range(1, month):
+            # note, feb has 29 days on a leapyear
+            ret += calendar.monthrange(year, m)[1]
+            
+        for d in range(1, day):
+            ret += 1
+            
+        return ret
+
+    return table[(0 - (days_since_1971(9, 2, 2020) - days_since_1971(day, month, year)) % 7)]
+
 if __name__ == "__main__":
-    print(unknownStartDay(31, 8, 2015))
+    print(dayOfTheWeek(31, 8, 2015))
