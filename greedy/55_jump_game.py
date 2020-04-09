@@ -1,4 +1,5 @@
-# Nathan Zhu 12:31 pm Jan 20th, 2019 12:31 pm Potbelly, State Street 
+# Nathan Zhu 12:31 pm Jan 20th, 2020 12:31 pm Potbelly, State Street 
+#            12:28 am March 18th, 2020 Foundry Lofts in Quarantine from coronavirus
 # Leetcode 55 | medium | kinda hard without proper insight
 # I strugged way too long on this problem, more than a year, for some odd reason.
 # I just came back and finished it in 15 min.  I am better now, I think.

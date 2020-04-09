@@ -1,4 +1,5 @@
 # Nathan Zhu 200 Vessey Street, New Yotk, June 26th, 6:00 pm
+# Nathan Zhu Foundry Lofts, March 27th, 2020.  9:25 pm
 # Leetcode_230 | medium | idea is easy, implementation may not be as easy, without using recursion.
 # 
 # Inorder gives you a correct order.  So, you can Get k-smallest in O(h) space with a stack and 
@@ -33,3 +34,29 @@ def kthSmallest(root, k):
         return -1
     
     return helper(root, k)
+
+# This is a cooler soln I wrote recently.
+def kthSmallest(self, root, k):
+	"""
+	:type root: TreeNode
+	:type k: int
+	:rtype: int
+	"""
+	def count(node):
+	    if not node: return 0
+	    return 1 + count(node.left) + count(node.right)
+
+	def helper(node, k):
+	    if not node: return 0
+	    
+	    ct = count(node.left)
+	    
+	    if ct > k - 1:
+		return helper(node.left, k)
+	    if ct == k - 1:
+		return node.val
+	    else:
+		return helper(node.right, k - ct - 1)
+	    
+	return helper(root, k)
+ 

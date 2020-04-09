@@ -5,6 +5,9 @@
 # This is the same as all nodes distance k, except you return first leaf node.
 # Typcial binary tree BFS
 # 
+
+import collections
+
 def findClosestLeaf(self, root, k):
     """
     :type root: TreeNode

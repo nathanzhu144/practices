@@ -1,3 +1,10 @@
+# Nathan Zhu EHS 55 John Street 9:14 am, August 5th, 2019. 
+#            Stockton, CA March 23rd, 2020 4:50 pm 
+# Leetcode 210 | medium | medium
+# Category: Topological sort
+# 
+# Similar problems: course schedule I
+
 def findOrder(self, numcourses, prereq):
     # outdegrees acts like a map from a course -> courses it is a prereq for
     # indegrees is number of courses that lead to this course
