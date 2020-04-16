@@ -1,3 +1,8 @@
+# Nathan Zhu  Jan 14th, 2020.  
+# Leetcode 1213 | easy | medium
+# Intuition behind this one is kinda like merge k sorted LL.  
+# We use 3 pointers and update them appropriately.
+
 def arraysIntersection(arr1, arr2, arr3):
     """
     :type arr1: List[int]

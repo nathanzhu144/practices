@@ -1,6 +1,7 @@
 # Nathan Zhu 7:50 pm December 25th, 2019, Christmas Day after giving presents
+# Nathan Zhu 4:34 am March 27th, 2020, Foundry Lofts, COVID-19
 # Leetcode 135 | hard | yeah not too easy
-# Category: Misc tricks
+# Category: greedy
 # Runtime : O(N) space O(N)
 #
 

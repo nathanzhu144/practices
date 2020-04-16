@@ -1,5 +1,6 @@
-# Nathan Zhu, Sunday August 4th, 4:27 am.  EHS 55 John Street.  My roommate just had sex very loudly and I couldn't
+# Nathan Zhu, Sunday August 4th, 2019 4:27 am.  EHS 55 John Street.  My roommate just had sex very loudly and I couldn't
 #                                          fall asleep, 
+# Nathan Zhu, Thursday March 19th, 2020, 9:53 pm Coronavirus, Foundry Lofts.
 # Leetcode 314 | medium | medium
 # Category: Fizzbuzz, boards
 # Each move is in O(1) time. 
@@ -66,4 +67,47 @@ class TicTacToe(object):
             if abs(self.updiag) == self.n:
                 return 1 if mark == 1 else 2
         
+        return 0
+
+# New soln, same idea, but slightly more concise I wrote during a mock
+class TicTacToe(object):
+
+    def __init__(self, n):
+        """
+        Initialize your data structure here.
+        :type n: int
+        """
+        self.row = [0] * n
+        self.col = [0] * n
+        self.diag = collections.defaultdict(int)
+        self.n = n
+        
+
+    def move(self, row, col, player):
+        """
+        Player {player} makes a move at ({row}, {col}).
+        @param row The row of the board.
+        @param col The column of the board.
+        @param player The player, can be either 1 or 2.
+        @return The current winning condition, can be either:
+                0: No one wins.
+                1: Player 1 wins.
+                2: Player 2 wins.
+        :type row: int
+        :type col: int
+        :type player: int
+        :rtype: int
+        """
+        change = -1
+        if player == 1: change = 1
+        
+        self.row[row] += change
+        self.col[col] += change
+        self.diag[('a', row + col)] += change
+        self.diag[('b', row - col)] += change
+        
+        check = [self.row[row], self.col[col], self.diag[('a', row + col)], self.diag[('b', row - col)]]
+        
+        if self.n in check: return 1
+        if -self.n in check: return 2
         return 0

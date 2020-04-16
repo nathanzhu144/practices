@@ -1,4 +1,5 @@
 ## Nathan Zhu 2:39 pm, 
+#              Match 24th, 2020 11:00 pm Foundry Lofts, COVID-19
 #  How to clone a single LL with a next and a random pointer?
 #
 #  There is an easy soln with a hash table O(n) space and O(n) time
@@ -13,6 +14,31 @@ class Node(object):
         self.next = next
         self.random = random
 """
+
+# This one is slightly cleaner
+def copyRandomList(head):
+	"""
+	:type head: Node
+	:rtype: Node
+	"""
+
+	table = dict() # Maps old node to new node
+
+	curr = head
+	while curr:
+	    table[curr] = Node(curr.val)
+	    curr = curr.next
+
+	curr = head
+	while curr:
+	    if curr.next:
+		table[curr].next = table[curr.next]
+	    if curr.random:
+		table[curr].random = table[curr.random]
+	    curr = curr.next
+
+	return table[head] if head else None
+
 def copyRandomList(self, head):
     """
     :type head: Node
@@ -43,3 +69,5 @@ def copyRandomList(self, head):
         curr = curr.next
         
     return table[head]
+
+

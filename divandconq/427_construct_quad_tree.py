@@ -1,4 +1,5 @@
  # Nathan Zhu, Thursday 4:05 pm August 22nd, 2019
+ #             March 23rd, 2020 1:59 am Stockton, CA
  # Leetcode 427 | medium | medium
  # Category: Data structure
  # 
@@ -18,7 +19,7 @@
  # 
  # Spatial indexing (like geohashing) can be easily represented with a quad tree. 
  
- def construct(grid):
+def construct(grid):
     """
     :type grid: List[List[int]]
     :rtype: Node
@@ -43,3 +44,34 @@
                     helper([row[:size // 2] for row in grid[size // 2:]]),     # SW
                     helper([row[size // 2:] for row in grid[size // 2:]]))     # SE
     return helper(grid)
+
+
+def construct_worse(self, grid):
+ 	"""
+	:type grid: List[List[int]]
+	:rtype: Node
+	"""
+	def helper(grid, sr, sc, er, ec):
+	    if not grid: return None
+	    
+	    val = grid[sr][sc]
+	    all_same = True
+	    for r in range(sr, er + 1):
+		for c in range(sc, ec + 1):
+		    if grid[r][c] != val:
+			all_same = False
+		if not all_same: break
+		    
+	    if all_same: return Node(val, True, None, None, None, None)
+	    
+	    rowsize, colsize = er - sr + 1, ec - sc + 1
+	    midrowm1, midrow = sr + rowsize // 2 - 1, sr + rowsize // 2
+	    midcolm1, midcol = sc + colsize // 2 - 1, sc + colsize // 2
+	    tl = helper(grid, sr, sc, midrowm1, midcolm1)
+	    tr = helper(grid, sr, midcol, midrowm1, ec)
+	    bl = helper(grid, midrow, sc, er, midcolm1)
+	    br = helper(grid, midrow, midcol, er, ec)
+	    return Node(-1, False, tl, tr, bl, br)
+	return helper(grid, 0, 0, len(grid) - 1, len(grid[0]) - 1)
+	    
+            
