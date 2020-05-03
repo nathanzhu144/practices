@@ -8,6 +8,10 @@ Focus on DP LAST. No one should ask DP and if any company does, Screw it. I have
 Lastly:
 Do the whole Full Stack Developer thing or get a nice grounding in it if you dont have cloud application experience or even Phone application experience. If you dont have these nailed, you will never pass System Design regardless of how much you lick the System Design Primer on the web clean.
 
+https://www.teamblind.com/post/Recession-tips-from-old-timers-UsEmeX0q
+
+
+
 
 Insert Interval
 Meeting Rooms

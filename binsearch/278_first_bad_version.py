@@ -1,4 +1,5 @@
 # Nathan Zhu Aug 27th 2019 2:14 am at Stockton Cali
+#            April 24th, 2020 11:00 am at Stockton Ca, COVID-19
 # Leetcode 278 | easy | EZ
 # Category: binary search
 # 
