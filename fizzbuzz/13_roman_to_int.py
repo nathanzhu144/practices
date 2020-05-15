@@ -1,3 +1,7 @@
+# Nathan Zhu April 4th, 2020, COVID-19, just finished 376 final.
+# Leetcode 13 | easy | easy
+# Category: fizzbuzz
+
 def romanToInt(self, s):
     """
     :type s: str

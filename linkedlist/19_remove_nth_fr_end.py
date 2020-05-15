@@ -1,3 +1,8 @@
+# Nathan Zhu May 8th, 2020, STarting Salesforce in a week-ish.  Saw Amber today.
+# Leetcode 19 | medium | not at all bad
+# Category: linkedlists
+
+
 def removeNthFromEnd(self, head, n):
     """
     :type head: ListNode

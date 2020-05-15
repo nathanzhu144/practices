@@ -1,5 +1,6 @@
-
-
+# Nathan Zhu April 4th, 2020. Crushed the binary search question on the 376 final, A+ in 481.
+# Leetcode 227 | medium | tbh kinda hard
+# Category: Stack (I think I'm weaker at stack qs)
 
 
 def calculate(s):

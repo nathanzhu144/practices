@@ -1,5 +1,6 @@
-easy
-
+# Nathan Zhu, April 4th, 2020, during COVID-19.  Crushed the binary search question on the 376 final.
+# Leetcode 141 | easy | easy
+# Category: Linked list
 def hasCycle(self, head):
     """
     :type head: ListNode

@@ -1,4 +1,5 @@
 # Nathan Zhu Wednesday August 7th, 2019, 2:38 pm.  EHS 55 John Street
+#            May 4th, 2020, 11:52 pm, Stockton, CA, COVID-19, just finished 376 final 5 days ago.  Meera's bday yesterday
 # Leetcode 295 | hard | not too bad
 # Category: Priority Queue
 # Runtime : Overall NlogN,
@@ -9,6 +10,42 @@
 # 
 
 import heapq
+# shorter iml
+class MedianFinder(object):
+
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.small, self.big = [], []
+
+    def addNum(self, num):
+        """
+        :type num: int
+        :rtype: None
+        """
+        if not self.small or -self.small[0] >= num:
+            heapq.heappush(self.small, -num)
+        else:
+            heapq.heappush(self.big, num)
+            
+        while len(self.small) - len(self.big) > 1:
+            heapq.heappush(self.big, -heapq.heappop(self.small))
+        while len(self.big) > len(self.small) > 0:
+            heapq.heappush(self.small, -heapq.heappop(self.big))
+            
+            
+
+    def findMedian(self):
+        """
+        :rtype: float
+        """
+        if len(self.small) == len(self.big):
+            return (-self.small[0] + self.big[0]) / 2.0
+        else:
+            return -self.small[0]
+
+# longer old impl w comments
 class MedianFinder(object):
 
     def __init__(self):

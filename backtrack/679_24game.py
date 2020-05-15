@@ -1,4 +1,5 @@
 # Nathan Zhu, July 14th, 2019, Amex building 36th floor, dark conference room. 11:03 am
+# Nathan Zhu, May 4th, 2020, Stockton, CA, COVID-19, after finals, got an A+ in 481, Meera's bday yesterday
 # Leetcode 679 | hard | yeah, pretty damn hard
 # Category: Backtracking, exhausting all possibilities
 # Runtime: Really bad lol

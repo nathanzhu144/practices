@@ -1,4 +1,5 @@
 # Nathan Zhu  EHS 55 John Street 11:50 am Saturday August 3rd, 2019
+# Nathan Zhu  May 7th, 2020, Thursday.  Just finished with finals, saw Amber today on a walk.
 # Leetcode 528 | medium | medium, if you have seen similar problem
 #
 # The idea here is to use a presum array, and then randomly choose a number between

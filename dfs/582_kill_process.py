@@ -1,4 +1,5 @@
 # Nathan Zhu, Jan 10th, 2020, 10:22 pm, Palmer Commons, Amcult 376 class.  We are talking about Haiti today.
+# Nathan Zhu, May 9th, 2020 10:00 am, Stockton, CA. Got an A in the beforementioned amcult clas!
 # Leetcode 582 | medium | EZ
 # Category: DFS
 #

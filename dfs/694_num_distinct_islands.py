@@ -1,4 +1,5 @@
 # Nathan Zhu Jan 4th, 2020.  9:37 pm.  South Quad, had dinner with Paul earlier.
+#            April 3rd, 2020.          COVID-19, Stockton, CA
 # Leetcode 694 | medium | kinda rough
 # Category: Misc tricks
 

@@ -1,4 +1,5 @@
 # Nathan Zhu Friday August 9th, 2019. 12:30 am, EHS 55 John street, last day of work is tomorrow.
+# Nathan Zhu Thursday May 7th, 2020. 12:35 am. Stockton, CA. First day of work at Salesforce is in a week-ish
 # Leetcode 489 | hard | yeah pretty damn hard if you have never seen it before
 # Category: DFS islands traversal with a "strong" twist
 

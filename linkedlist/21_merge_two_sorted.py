@@ -1,4 +1,5 @@
 # Nathan Zhu Jan 7th, 2020.  Did this question for the first time at the Qdoba without plugs near 
+# Nathan Zhu, Stockton, CA May 14th, 2020. Dang life has changed so much.  Hit me yesterday I might not actually go back to UM.
 # CTC / wolverine trading.  I remember not believing this worked, but it is so simple now.
 # Leetcode 21 | easy | easy
 # Category: linked list

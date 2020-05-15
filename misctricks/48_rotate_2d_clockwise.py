@@ -1,5 +1,6 @@
 #  Nathan Zhu 
 #  Saturday June 22nd 10:10 pm Amex Tower 36th floor, executive conf room
+#  Monday, May 3rd, 2020, Stockton, CA, COVID-19, damn feel nostalgic of New York
 #  There's a simple way to rotate a 2d matrix in-place
 #  Leetcode 48 medium
 #

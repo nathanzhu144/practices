@@ -1,4 +1,5 @@
 # Nathan Zhu
+# Nathan Zhu May 5th, 2020, Stockton, CA, Ate dumplings today
 # Leetcode 353 | med | not too easy
 # Category: Design
 
@@ -19,6 +20,9 @@ class SnakeGame(object):
         """
         start = (0, 0)
         self.snake = collections.deque([start])    # [tail] [middle] [middle] [head]
+
+
+
         self.snakePos = set([start])
         self.foods = collections.deque(food)       
         self.width, self.height = width, height
