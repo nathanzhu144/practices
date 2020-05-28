@@ -7,6 +7,7 @@
 # Idea: 
 # Push all gates into queue first. Then for each gate update its neighbor cells and push them to the queue.
 # Repeating above steps until there is nothing left in the queue.
+# Update: Got this question in my bloomberg ONSITE
 
 def wallsAndGates(self, rooms):
     """

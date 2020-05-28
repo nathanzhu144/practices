@@ -1,4 +1,4 @@
-#  Nathan Zhu 2:11 pm, Found a really nice dark room.
+#  Nathan Zhu 2:11 pm, Found a really nice dark room at Amex
 #  Leetcode 240 | medium | seems about medium.
 #  Category: Misc trick
 #  The runtime is O(m + n) where m and n are sides of matrix.
