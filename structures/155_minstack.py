@@ -1,4 +1,6 @@
 # Nathan Zhu Tuesday July 23rd, 2019, Overlooking Hudson River 36th floor.
+# Nathan Zhu Wednesday June 3rd, 2020, Stockton, CA. Not overlooking hudson, overlooking stockton, CA. A year later, and this is easier!  
+#                                                    This time I did it with two stacks
 # Leetcode 155 | easy | lol, not so easy
 # 
 # # Observations #
