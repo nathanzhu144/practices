@@ -1,0 +1,58 @@
+
+def solution(A):
+    arr = []
+    all_doms = [1] * 6 # set([(a, b) for (a, b) in zip(A, A[1:])])
+    
+    def helper(i):
+        def add(a, b, i, j):
+            # print(arr)
+            # print("add")
+            # print(all_doms)
+            all_doms[j] = 0
+            arr.extend([a, b])
+            if helper(i + 1): return True
+            arr.pop()
+            arr.pop()
+            all_doms[j] = 1
+            return False
+
+        def add_rev(a, b, i, j):
+            # print(arr)
+            # print("add rev")
+            # print(all_doms)
+            all_doms[j] = 0
+            arr.extend([b, a])
+            if helper(i + 1): return True
+            arr.pop()
+            arr.pop()
+            all_doms[j] = 1
+            return False
+
+        if i == 6: 
+            print(arr)
+            return True
+        
+        for j in range(6): 
+            a, b = A[j * 2], A[j * 2 + 1]
+            if all_doms[j] == 0: continue
+
+            # pos 6, 7
+            if i == 3 and (a == arr[3] and b == arr[4]):
+                if add(a, b, i, j): return True
+            if i == 3 and (a == arr[4] and b == arr[3]):
+                if add_rev(a, b, i, j): return True
+            if i == 4 and (a == arr[1] and b == arr[2]):
+                if add(a, b, i, j): return True
+            if i == 4 and (a == arr[2] and b == arr[1]):
+                if add_rev(a, b, i, j): return True
+            if i == 5 and (a == arr[9] and b == arr[6]):
+                if add(a, b, i, j): return True
+            if i == 5 and (a == arr[6] and b == arr[9]):
+                if add_rev(a, b, i, j): return True
+            if i < 3:
+                if add(a, b, i, j): return True
+                if add_rev(a, b, i, j): return True
+
+        return False
+
+    return "YES" if helper(0) else "NO"

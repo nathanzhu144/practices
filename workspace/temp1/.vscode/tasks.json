@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
