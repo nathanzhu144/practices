@@ -20,7 +20,7 @@ bool isIdealPermutation(vector<int>& nums) {
     
     for(int i = 0; i < N; ++i){
         if(i > 1) { 
-            maxnum = max(maxnum, nums[i - 2]);
+            maxnum = max(maxnuds[i - 2]);
         }
         
         if(maxnum > nums[i]) return false;
