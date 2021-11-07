@@ -2,6 +2,19 @@
 # Leetcode 1029 | easy | medium
 # Category: DP / greedy 
 # This is the greedy soln.
+#
+#         [[10,20],[30,200],[400,50],[30,20]]
+#              A      B        C      D
+#         [-10, -170, 350, 10]
+#         [-170, -10, 10, 350]
+#           B    A     D   C
+# Idea here is we send all people to city A.
+# Then, we have to send N of them to city B.
+# How much money could we save?
+# If we sent person C to city B, we would save 350 dollars. 
+# If we sent person D to city A, we would save 10 dollars.
+# 
+# Sort from least->most savings, take the half with most savings.
 
 def twoCitySchedCost(costs):
     """
